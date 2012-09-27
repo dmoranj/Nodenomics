@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/simulator.css" />
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/javascripts/jquery.min.js"></script>
+    <script src="/javascripts/jquery.form.js"></script>
+
+</head>
+
+<body>
+    <div id="controls">
+        <div class="control">
+            <div class="label">e (Exchange rate)</div>
+            <div class="input">
+                <input type="text" name="e" />
+            </div>
+        </div>
+        <div class="control">
+            <div class="label">M (Monetary Offer)</div>
+            <div class="input">
+                <input type="text" name="M" />
+            </div>
+        </div>
+        <div class="control">
+            <div class="label">T (Tax rates)</div>
+            <div class="input">
+                <input type="text" name="T" />
+            </div>
+        </div>
+        <div class="control">
+            <div class="label">G (Government expenditure)</div>
+            <div class="input">
+                <input type="text" name="G" />
+            </div>
+        </div>
+        <div class="control">
+            <div class="label">V (Money velocity)</div>
+            <div class="input">
+                <input type="text" name="V" />
+            </div>
+        </div>
+        <div class="control">
+            <div class="label">MPC (Marginal Propensity To Consume)</div>
+            <div class="input">
+                <input type="text" name="MPC" />
+            </div>
+        </div>
+        <div class="control">
+            <div class="input">
+                <input type="button" name="Model.nextStep()" value="Advance economy" />
+            </div>
+        </div>
+    </div>
+
+    <div id="results">
+        <div class="result">
+            <div class="label">GDP (Gross Domestic Product)</div>
+            <div class="lastResult"></div>
+            <div class="historicalResults"></div>
+            <div class="graph"></div>
+        </div>
+        <div class="result">
+            <div class="label">C (Consumption)</div>
+            <div class="lastResult"></div>
+            <div class="historicalResults"></div>
+            <div class="graph"></div>
+        </div>
+        <div class="result">
+            <div class="label">I (Investment)</div>
+            <div class="lastResult"></div>
+            <div class="historicalResults"></div>
+            <div class="graph"></div>
+        </div>
+        <div class="result">
+            <div class="label">XN (Net exports)</div>
+            <div class="lastResult"></div>
+            <div class="historicalResults"></div>
+            <div class="graph"></div>
+        </div>
+        <div class="result">
+            <div class="label">P (Price Level)</div>
+            <div class="lastResult"></div>
+            <div class="historicalResults"></div>
+            <div class="graph"></div>
+        </div>
+    </div>
+</body>
+</html>
