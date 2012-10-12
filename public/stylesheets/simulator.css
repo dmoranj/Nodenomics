@@ -2,42 +2,100 @@ html {
 
 }
 
-#controls {
+#main {
+    position: absolute;
+    width: 90%;
+    height: 95%;
+    left: 5%;
+    background-color: #ffff00;
+}
 
+#controls {
+    position: absolute;
+    left: 5px;
+    margin: 2%;
+    height: 90%;
+    width: 30%;
+    background-color: white;
+    padding: 1%;
 }
 
 .control {
-
+    height: 40px;
 }
 
 .control > .label {
-
+    float: left;
 }
 
 .control > .input {
+    float: right;
+}
+
+.control > .input > input {
+    border: none;
+    border-bottom: dotted;
+    border-bottom-width: 1px;
 
 }
 
 #results {
-
+    position: absolute;
+    right: 1%;
+    margin: 2%;
+    height: 90%;
+    width: 60%;
+    background-color: red;
+    padding: 1%;
 }
 
 .result {
+    background-color: #219161;
+    padding: 1%;
+    margin-bottom: 1%;
+    height: 8%;
+}
 
+.selected {
+    height: 50%;
 }
 
 .result > .label {
-
+    text-align: center;
+    font-size: 16pt;
+    height: 11%;
 }
 
 .result > .lastResult {
-
+    display: none;
 }
 
 .result > .historicalResults {
-
+    display: none;
 }
 
 .result > .graph {
+    display: none;
+}
 
+.selected > .historicalResults {
+    position: relative;
+    display: block;
+    height: 15%;
+    background-color: #ee82ee;
+    margin-bottom: 4px;
+    padding: 1%;
+}
+
+.selected > .graph {
+    position: relative;
+    display: block;
+    height: 65%;
+    background-color: #ee82ee;
+    margin-bottom: 4px;
+    padding: 1%;
+}
+
+.meaning {
+    font-size: 8pt;
 }
